@@ -3,9 +3,9 @@ package uz.tioma.medium.add_two_numbers;
 public class AddTwoNumbers {
     public static void main(String[] args) {
         ListNode l1 = new ListNode(7);
-        ListNode l2 = new ListNode(3);
+        ListNode l2 = new ListNode(8);
         System.out.println(addTwoNumbers(l1, l2).val);
-        System.out.println(addTwoNumbers(l1, l2).next);
+        System.out.println(addTwoNumbers(l1, l2).next.val);
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
