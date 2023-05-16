@@ -2,8 +2,6 @@
 This is my re
 postiry to learn leetcode solution
 
-# Heading 1
-
 ```
 publc static void main(){
 print("Abbos")
