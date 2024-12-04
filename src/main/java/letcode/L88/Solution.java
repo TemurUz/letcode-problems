@@ -7,6 +7,7 @@ public class Solution {
         int [] nums2 = {2,5,6};
         int n = 3;
 
+        merge(nums1, m, nums2, n);
     }
 
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
