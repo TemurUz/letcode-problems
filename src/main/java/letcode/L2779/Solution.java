@@ -16,10 +16,6 @@ public class Solution {
         return result;
     }
 
-    public int maximumBeauty1(int[] nums, int k) {
-        return 0;
-    }
-
     public static void main(String[] args) {
         int[] nums = {4, 6, 1};
         int k = 2;
