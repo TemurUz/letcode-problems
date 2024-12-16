@@ -1,30 +1,6 @@
 package letcode.L2762;
 
-import java.util.TreeMap;
-
 public class Solution {
-
-    public long continuousSubarrays(int[] nums) {
-        int start = 0;
-        long totalSubarrays = 0;
-        TreeMap<Integer, Integer> freqMap = new TreeMap<>();
-
-        for (int end = 0; end < nums.length; end++) {
-            freqMap.put(nums[end], freqMap.getOrDefault(nums[end], 0) + 1);
-
-            while (freqMap.lastKey() - freqMap.firstKey() > 2) {
-                freqMap.put(nums[start], freqMap.get(nums[start]) - 1);
-                    freqMap.remove(nums[start]);                if (freqMap.get(nums[start]) == 0) {
-
-                    }
-                start++;
-            }
-
-            totalSubarrays += (end - start + 1);
-        }
-
-        return totalSubarrays;
-    }
 
     public int countSubarrays(int[] nums) {
         int n = nums.length;
@@ -58,7 +34,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int[] nums = {5,4,2,4};
+        int[] nums = {5, 4, 2, 4};
         Solution solution = new Solution();
 //        System.out.println(solution.continuousSubarrays(nums));
         System.out.println(solution.countSubarrays(nums));

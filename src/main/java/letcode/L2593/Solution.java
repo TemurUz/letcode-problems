@@ -11,9 +11,9 @@ public class Solution {
         Deque<Integer> q = new LinkedList<>();
 
         // Traverse through the array
-        for (int i = 0; i < n; i++) {
+        for (int num : nums) {
             // If queue is not empty and the current number is greater than or equal to the last in queue
-            if (!q.isEmpty() && nums[i] >= q.peekLast()) {
+            if (!q.isEmpty() && num >= q.peekLast()) {
                 boolean skip = false;
                 // Process the elements in the queue
                 while (!q.isEmpty()) {
@@ -27,7 +27,7 @@ public class Solution {
             }
 
             // Add current element to the queue
-            q.addLast(nums[i]);
+            q.addLast(num);
         }
 
         // Final processing of remaining elements in the queue
