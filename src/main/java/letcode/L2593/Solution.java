@@ -7,7 +7,7 @@ public class Solution {
 
     public long findScore(int[] nums) {
         long score = 0; // Use long to avoid overflow
-        int n = nums.length;
+
         Deque<Integer> q = new LinkedList<>();
 
         // Traverse through the array
